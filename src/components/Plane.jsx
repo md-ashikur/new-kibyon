@@ -27,7 +27,7 @@ export function Airplane(props) {
       dispose={null}
     
     >
-      <group  scale={4} ref={helix} name="Studio_limbo_3_point_lighting_2x2x2">
+      <group  scale={2} ref={helix} name="Studio_limbo_3_point_lighting_2x2x2">
        
         <group name="Jet_03" position={[3.4, -5.76, -51.38]}>
           <mesh
