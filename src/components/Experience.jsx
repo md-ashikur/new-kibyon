@@ -6,7 +6,7 @@ import * as THREE from "three";
 import { Euler, Group, Vector3 } from "three";
 import { usePlay } from "../contexts/Play";
 import { fadeOnBeforeCompile } from "../utils/fadeMaterial";
-import { Airplane } from "./Airplane";
+import { Airplane } from "./Plane";
 import { Background } from "./Background";
 import { Cloud } from "./Cloud";
 import { Speed } from "./Speed";
@@ -516,7 +516,7 @@ We have a wide range of beverages!`,
               <Airplane
                 rotation-y={Math.PI / 2}
                 scale={[0.2, 0.2, 0.2]}
-                position-y={0.1}
+                position-y={-0.3}
               />
             </Float>
           </group>
