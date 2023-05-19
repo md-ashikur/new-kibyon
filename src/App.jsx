@@ -17,7 +17,7 @@ import "aos/dist/aos.css";
 
 import { useEffect } from "react";
 
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/legal" element={<LegalPage />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
       {/* <CookieConsent debug={true} enableDeclineButton flipButtons>
         This website uses cookies to enhance the user experience.
         <span
