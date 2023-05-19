@@ -52,7 +52,7 @@ function App() {
           This bit of text is smaller :O
         </span>
       </CookieConsent> */}
-      <GoToTop />
+      {/* <GoToTop /> */}
     </div>
   );
 }
