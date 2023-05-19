@@ -12,16 +12,22 @@
     "@react-three/drei": "^9.56.28",
     "@react-three/fiber": "^8.11.5",
     "@react-three/postprocessing": "^2.7.1",
+    "aos": "^2.3.4",
     "gsap": "^3.11.5",
     "lamina": "^1.1.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9",
+    "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.2",
+    "react-scroll-parallax": "^3.4.2",
     "three": "^0.150.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
     "vite": "^4.1.0"
   }
 }
