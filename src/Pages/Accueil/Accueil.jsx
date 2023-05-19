@@ -8,10 +8,6 @@ import WSecThree from "./WSceThree/WSecThree";
 import WsecOne from "./WsecOne/WsecOne";
 import Wheader from "./Wheader/Wheader";
 
-function Loader() {
-  const { progress } = useProgress();
-  return <div>{Math.floor(progress)}% loaded</div>;
-}
 
 const Accueil = () => {
   return (
@@ -26,7 +22,7 @@ const Accueil = () => {
           />
         </div>
 
-        <div className="  absolute top-20 ">
+        <div className="absolute top-20 ">
           <Wheader />
         </div>
         <WsecOne />

@@ -1,5 +1,4 @@
 import React from "react";
-import Wave from "react-wavify";
 import planeVideo from "../../../Videos/Plane  trnasparent _ home page 04-23 VF_VP9.webm";
 import mapVideo from "../../../Videos/Maps transparent VF (quick time) 27-04_VP9.webm";
 import "./WsecOne.css";
@@ -20,18 +19,7 @@ const WsecOne = () => {
   return (
     <div>
       <div className="relative mt-10 z-10 overflow-x-hidden">
-        <Wave
-          id="shoe"
-          className="h-screen -mt-20 lg:-mt-0 z-20"
-          fill="#ffff"
-          paused={false}
-          options={{
-            height: 20,
-            amplitude: 40,
-            speed: 0.15,
-            points: 5,
-          }}
-        />
+
         <div className="absolute top-40 lg:px-20 grid lg:grid-cols-2 h-screen">
           {/* shoe block----- */}
           <div
@@ -80,18 +68,7 @@ const WsecOne = () => {
         </div>
         {/* plane---------- */}
         <div className="relative -mt-20">
-          <Wave
-            id="plane"
-            className="h-screen -mt-20 lg:-mt-0"
-            fill="#0120aa"
-            paused={false}
-            options={{
-              height: 20,
-              amplitude: 40,
-              speed: 0.15,
-              points: 5,
-            }}
-          />
+         
           <div className="grid lg:grid-cols-2 lg:p-20 h-screen absolute top-10">
             <div
               data-aos="zoom-in-up"
@@ -124,18 +101,7 @@ const WsecOne = () => {
         </div>
         {/* hand--------------------- */}
         <div className="relative -mt-20 overflow-hidden">
-          <Wave
-            id="hand"
-            className="h-screen -mt-20 lg:-mt-0"
-            fill="#ffff"
-            paused={false}
-            options={{
-              height: 20,
-              amplitude: 40,
-              speed: 0.15,
-              points: 5,
-            }}
-          />
+          
           <div className="lg:p-20  grid lg:grid-cols-2 h-screen absolute top-20  ">
             <div
               className=""
@@ -184,18 +150,7 @@ const WsecOne = () => {
         {/* map block----- */}
 
         <div className="relative  -mt-20 overflow-hidden">
-          <Wave
-            id="map"
-            className="h-screen mt-3 lg:-mt-0"
-            fill="#0120aa"
-            paused={false}
-            options={{
-              height: 20,
-              amplitude: 40,
-              speed: 0.15,
-              points: 5,
-            }}
-          />
+        
           <div className="lg:px-20  grid lg:grid-cols-2 h-screen absolute top-40 text-base-100">
             <div
               data-aos="zoom-in-up"

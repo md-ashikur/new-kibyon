@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 
 export function Logo(props) {
-  const { nodes, materials } = useGLTF('/Models/LogoKibyon.glb')
+  const { nodes, materials } = useGLTF('/models/LogoKibyon.glb')
 
   const logoRef = useRef();
  

@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&display=swap");
+
 
 #root {
   width: 100vw;
@@ -10,10 +11,11 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 5px;
 }
 
 /* TRACK */
@@ -23,7 +25,7 @@ body {
 
 /* HANDLE */
 ::-webkit-scrollbar-thumb {
-  background: white;
+  background: rgb(24, 24, 237);
   height: 10%;
 }
 
@@ -76,7 +78,7 @@ body {
 }
 
 .intro--disappear .logo {
-  top: 42px;
+  top: 80px;
   transform: scale(0.25);
   transform-origin: center top;
 }

@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react"
 
 export function Hand(props) {
  
-    const { nodes, materials, animations } = useGLTF('/Models/handSewing.glb')
+    const { nodes, materials, animations } = useGLTF('/models/handSewing.glb')
     const { actions } = useAnimations(animations)
 
 const handRef = useRef();

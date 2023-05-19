@@ -8,7 +8,7 @@ export const FLOOR_HIGHT = 7;
 export const NB_FLOORS = 3;
 
 export function Shoes(props) {
-  const { nodes, materials } = useGLTF("/Models/Shoes.glb");
+  const { nodes, materials } = useGLTF("/models/Shoes.glb");
   const shoeRef = useRef();
   const tl = useRef();
 

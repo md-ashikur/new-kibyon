@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ParallaxBanner, ParallaxProvider } from "react-scroll-parallax";
-import Wave from "react-wavify";
 import kibyonText from "../../../img/Welcome page/kt.png";
 import kibyonBg from "../../../img/Welcome page/Untitled-1.jpg";
 
@@ -24,17 +23,7 @@ const WSecTwo = () => {
   return (
     <div className="z-10 relative -mt-20" onMouseMove={handleMouseMove}>
        <span className="cursor z-20" />
-         <Wave
-            className="-mb-5"
-            fill="black"
-            paused={false}
-            options={{
-              height: 20,
-              amplitude: 40,
-              speed: 0.15,
-              points: 5,
-            }}
-          />
+       
       <div className="bg-primary h-52 text-center flex justify-center ">
         <h1 data-aos="fade-up"
      data-aos-anchor-placement="top-center" className="lg:w-[70%] pt-28 px-5 lg:text-4xl text-base-100 font-semibold ">

@@ -1,47 +1,59 @@
-import { ScrollControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { EffectComposer, Noise } from "@react-three/postprocessing";
-import { useMemo } from "react";
-import { Experience } from "./components/Experience";
-import { Overlay } from "./components/Overlay";
-import { usePlay } from "./contexts/Play";
+
+import About from "./Pages/About/About";
+import {
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import OfferPage from "./Pages/OfferPage/OfferPage";
+
+import Accueil from "./Pages/Accueil/Accueil";
+import Contact from "./Pages/Contact/Contact";
+import LegalPage from "./Pages/LegalPage/LegalPage";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+import GoToTop from "./Components/GoToTop/GoToTop";
+import { useEffect } from "react";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
+
 
 function App() {
-  const { play, end } = usePlay();
+  Aos.init();
 
-  const effects = useMemo(
-    () => (
-      <EffectComposer>
-        <Noise opacity={0.0} />
-      </EffectComposer>
-    ),
-    []
-  );
+  const location = useLocation();
+
+  useEffect(() => {
+    document.querySelector("html").style.scrollBehavior = "auto";
+    window.scroll({ top: 0 });
+    document.querySelector("html").style.scrollBehavior = "";
+  }, [location.pathname]);
 
   return (
-    <>
-      <Canvas>
-        <color attach="background" args={["#ececec"]} />
-        <ScrollControls
-          pages={play && !end ? 20 : 0}
-          damping={0.5}
+    <div className="App">
+      <Navbar ></Navbar>
+      <Routes>
+        <Route path="/" element={<div className="text-5xl">under construction. available very soon</div>} />
+        <Route path="/offer" element={<OfferPage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/legal" element={<LegalPage />} />
+      </Routes>
+      <Footer />
+      {/* <CookieConsent debug={true} enableDeclineButton flipButtons>
+        This website uses cookies to enhance the user experience.
+        <span
           style={{
-            top: "10px",
-            left: "0px",
-            bottom: "10px",
-            right: "10px",
-            width: "auto",
-            height: "auto",
-            animation: "fadeIn 2.4s ease-in-out 1.2s forwards",
-            opacity: 0,
+            fontSize: "10px",
           }}
         >
-          <Experience />
-        </ScrollControls>
-        {effects}
-      </Canvas>
-      <Overlay />
-    </>
+          This bit of text is smaller :O
+        </span>
+      </CookieConsent> */}
+      <GoToTop />
+    </div>
   );
 }
 

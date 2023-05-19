@@ -7,7 +7,7 @@ import { useRef } from "react";
 import { Color, DoubleSide, MeshBasicMaterial } from "three";
 
 export function Plane(props) {
-  const { nodes, materials, animations } = useGLTF("/Models/Plane.glb");
+  const { nodes, materials, animations } = useGLTF("/models/Plane.glb");
   const { actions } = useAnimations(animations);
 
   const planeRef = useRef();

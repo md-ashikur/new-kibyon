@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 
 export function Maps(props) {
-    const { nodes, materials } = useGLTF("/Models/Maps.glb");
+    const { nodes, materials } = useGLTF("/models/Maps.glb");
 
     const mapRef = useRef();
 
