@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import OfferPage from "./Pages/OfferPage/OfferPage";
 
-import Accueil from "./Pages/Accueil/Accueil";
+
 import Contact from "./Pages/Contact/Contact";
 import LegalPage from "./Pages/LegalPage/LegalPage";
 
@@ -16,7 +16,7 @@ import "aos/dist/aos.css";
 
 
 import { useEffect } from "react";
-import Navbar from "./Components/Navbar/Navbar";
+
 import Footer from "./Components/Footer/Footer";
 
 
