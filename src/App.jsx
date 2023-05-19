@@ -18,7 +18,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 
-// import Footer from "./Components/Footer/Footer";
+
 
 
 function App() {
