@@ -14,7 +14,7 @@ import LegalPage from "./Pages/LegalPage/LegalPage";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import GoToTop from "./Components/GoToTop/GoToTop";
+
 import { useEffect } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
