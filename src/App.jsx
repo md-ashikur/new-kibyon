@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar ></Navbar>
+     
       <Routes>
         <Route path="/" element={<div className="text-5xl">under construction. available very soon</div>} />
         <Route path="/offer" element={<OfferPage />} />
